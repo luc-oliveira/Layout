@@ -1,10 +1,27 @@
+@charset "UTF-8";
 
 * {
   box-sizing: border-box;
+  font-size: 12px;
+  font-weight: normal;
 }
 
-.table-default, .table-default td, .table-default th {
-    /*border: 1px solid black;*/
+.iconTrofeu:after{
+    content: '';
+    display: block;
+    height: 40px;  /*height of icon */
+    width: 40px;  /*width of icon */
+    position: absolute;
+      /*where to replace the icon */
+    top: 0px;
+    left: -40px;
+      /*background */
+    background: #F8E6AE url("images.png") no-repeat 0px 0px;
+}
+
+.table-default {
+    border-collapse: collapse;
+    width: 100%;
 }
 
 .table-default td, .table-default th {
@@ -13,43 +30,51 @@
 
 .table-default th {
   color: #E9967A;
-}
-
-.table-default {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.table-default th {
-    text-align: left;
+  text-align: left;
 }
 
 .titulo {
   font-weight: bold;
 }
 
-.separador {
-  margin: 3px 0px 3px 0px;
+.spanEmpresa {
   display: block;
-  border-bottom: 3px solid grey;
+  color: #E9967A;
 }
 
-#bloco {
+.color-normal {
+  color: black !important;
+  font-weight: normal;
+}
+
+.separador {
+  margin: 3% 0px 3% 0px;
+  display: block;
+  border-bottom: 3px solid #D3D3D3;
+}
+
+.bloco {
   width: 37%;
   float: left;
   margin-right: 2%;
-  height: 200px;
+  height: 250px;
 }
 
-#grafico {
+.grafico {
   width: 31%;
   float: left;
   margin-right: 2%;
-  height: 200px;
+  height: 250px;
 }
 
-#empresa {
+.empresa {
   width: 25%;
   float: left;
-  height: 200px;
+  height: 250px;
+}
+
+.row {
+  height: 250px;
+  border-bottom: 1px solid #D3D3D3;
+  margin-bottom: 30px;
 }

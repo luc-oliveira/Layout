@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <meta charset="UTF=8">
+  <meta charset="UTF-8">
   <title>Página inicial</title>
   <link rel="stylesheet" href="css/layout.css">
   <script src="js/layout.js"></script>
@@ -9,9 +9,10 @@
 <body>
   <div id="principal">
 
+    <!-- Linha 1 -->
     <div class="row">
 
-      <div id="bloco">
+      <div class="bloco">
         <span class="titulo">Carcará</span>
         <span class="separador"></span>
         <table class="table-default">
@@ -48,27 +49,248 @@
         </table>
       </div>
 
-      <div id="grafico">
-        <span class="titulo">Empresas do lance selecionado</span>
+      <div class="grafico">
+        <span class="titulo">Gráfico dos Lances</span>
         <span class="separador"></span>
+        <div id="grafico-1"></div>
       </div>
+      <script>criarGrafico("grafico-1", dados[0]);</script>
 
-      <div id="empresa">
+      <div class="empresa">
         <span class="titulo">Empresas do lance selecionado</span>
         <span class="separador"></span>
-        <span style="display: block;">Empresas participantes</span>
+        <span class="spanEmpresa">Empresas participantes</span>
         <table class="table-default">
           <tr>
-            <th>1 Lugar % excedente em óleo: 25%</th>
-            <th>Vazio</th>
+            <th colspan="2" class="color-normal">1 Lugar % excedente em óleo: 25%</th>
+          </tr>
+          <tr>
+            <td>Petroleo Brasileiro S.A - PETROBRAS</td>
+            <td>50%</td>
           </tr>
           <tr>
             <td>Empresa A</td>
             <td>50%</td>
           </tr>
+        </table>
+      </div>
+
+    </div>
+
+    <!-- Linha 2 -->
+    <div class="row">
+
+      <div class="bloco">
+        <span class="titulo">Gato do Mato</span>
+        <span class="separador"></span>
+        <table class="table-default">
           <tr>
-            <td>Empresa B</td>
-            <td>50%</td>
+            <th>Bacia</th>
+            <th>Setor</th>
+            <th>Bônus de assinatura</th>
+            <th>Área km²</th>
+          </tr>
+          <tr>
+            <td>Santos</td>
+            <td>SS-AUP1</td>
+            <td>R$3.000.000.000,00</td>
+            <td>1.548</td>
+          </tr>
+          <tr>
+            <th colspan="2">% mínimo de excedente óleo</th>
+            <th>Conteúdo local de exploração</th>
+            <th>Fator TLD</th>
+          </tr>
+          <tr>
+            <td colspan="2">11,53%</td>
+            <td>70%</td>
+            <td>15%</td>
+          </tr>
+          <tr>
+            <th colspan="2">Conteúdo local de desenv.</th>
+            <th colspan="2">% de preferência Petrobras</th>
+          </tr>
+          <tr>
+            <td colspan="2">50%</td>
+            <td colspan="2">-</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="grafico">
+        <span class="titulo">Gráfico dos Lances</span>
+        <span class="separador"></span>
+        <div id="grafico-2"></div>
+      </div>
+      <script>criarGrafico("grafico-2", dados[1]);</script>
+
+      <div class="empresa">
+        <span class="titulo">Empresas do lance selecionado</span>
+        <span class="separador"></span>
+        <span class="spanEmpresa">Empresas participantes</span>
+        <table class="table-default">
+          <tr>
+            <th colspan="2" class="color-normal">1 Lugar % excedente em óleo: 25%</th>
+          </tr>
+          <tr>
+            <td>Petrobras Brasileiro S.A - PETROBRAS</td>
+            <td>70%</td>
+          </tr>
+          <tr>
+            <td>Empresa C</td>
+            <td>20%</td>
+          </tr>
+          <tr>
+            <td>Empresa D</td>
+            <td>10%</td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+
+    <!-- Linha 3 -->
+    <div class="row">
+
+      <div class="bloco">
+        <span class="titulo">Sapinhoá</span>
+        <span class="separador"></span>
+        <table class="table-default">
+          <tr>
+            <th>Bacia</th>
+            <th>Setor</th>
+            <th>Bônus de assinatura</th>
+            <th>Área km²</th>
+          </tr>
+          <tr>
+            <td>Santos</td>
+            <td>SS-AUP1</td>
+            <td>R$3.000.000.000,00</td>
+            <td>1.548</td>
+          </tr>
+          <tr>
+            <th colspan="2">% mínimo de excedente óleo</th>
+            <th>Conteúdo local de exploração</th>
+            <th>Fator TLD</th>
+          </tr>
+          <tr>
+            <td colspan="2">10,34%</td>
+            <td>70%</td>
+            <td>15%</td>
+          </tr>
+          <tr>
+            <th colspan="2">Conteúdo local de desenv.</th>
+            <th colspan="2">% de preferência Petrobras</th>
+          </tr>
+          <tr>
+            <td colspan="2">50%</td>
+            <td colspan="2">30%</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="grafico">
+        <span class="titulo">Gráfico dos Lances</span>
+        <span class="separador"></span>
+        <div id="grafico-3"></div>
+      </div>
+      <script>criarGrafico("grafico-3", dados[2]);</script>
+
+      <div class="empresa">
+        <span class="titulo">Empresas do lance selecionado</span>
+        <span class="separador"></span>
+        <span class="spanEmpresa">Empresas participantes</span>
+        <table class="table-default">
+          <tr>
+            <th colspan="2" class="color-normal">1 Lugar % excedente em óleo: 25%</th>
+          </tr>
+          <tr>
+            <td>Petrobras Brasileiro S.A - PETROBRAS</td>
+            <td>30%</td>
+          </tr>
+          <tr>
+            <td>Petrobras Brasileiro S.A - PETROBRAS</td>
+            <td>15%</td>
+          </tr>
+          <tr>
+            <td>Empresa C</td>
+            <td>20%</td>
+          </tr>
+          <tr>
+            <td>Empresa D</td>
+            <td>35%</td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+
+    <!-- Linha 4 -->
+    <div class="row">
+
+      <div class="bloco">
+        <span class="titulo">Campo de Teste</span>
+        <span class="separador"></span>
+        <table class="table-default">
+          <tr>
+            <th>Bacia</th>
+            <th>Setor</th>
+            <th>Bônus de assinatura</th>
+            <th>Área km²</th>
+          </tr>
+          <tr>
+            <td>Santos</td>
+            <td>SS-AUP1</td>
+            <td>R$3.000.000.000,00</td>
+            <td>1.548</td>
+          </tr>
+          <tr>
+            <th colspan="2">% mínimo de excedente óleo</th>
+            <th>Conteúdo local de exploração</th>
+            <th>Fator TLD</th>
+          </tr>
+          <tr>
+            <td colspan="2">12,98%</td>
+            <td>70%</td>
+            <td>15%</td>
+          </tr>
+          <tr>
+            <th colspan="2">Conteúdo local de desenv.</th>
+            <th colspan="2">% de preferência Petrobras</th>
+          </tr>
+          <tr>
+            <td colspan="2">50%</td>
+            <td colspan="2">35%</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="grafico">
+        <span class="titulo">Gráfico dos Lances</span>
+        <span class="separador"></span>
+        <div id="grafico-4"></div>
+      </div>
+      <script>criarGrafico("grafico-4", dados[3]);</script>
+
+      <div class="empresa">
+        <span class="titulo">Empresas do lance selecionado</span>
+        <span class="separador"></span>
+        <span class="spanEmpresa">Empresas participantes</span>
+        <table class="table-default">
+          <tr>
+            <th colspan="2" class="color-normal">1 Lugar % excedente em óleo: 25%</th>
+          </tr>
+          <tr>
+            <td>Empresa C</td>
+            <td>40%</td>
+          </tr>
+          <tr>
+            <td>Empresa D</td>
+            <td>30%</td>
+          </tr>
+          <tr>
+            <td>Empresa E</td>
+            <td>30%</td>
           </tr>
         </table>
       </div>
@@ -77,7 +299,4 @@
 
   </div>
 
-  <script>
-    criarGrafico();
-  </script>
 <body>
