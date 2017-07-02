@@ -1,0 +1,55 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.table-default, .table-default td, .table-default th {
+    /*border: 1px solid black;*/
+}
+
+.table-default td, .table-default th {
+  padding: 3px 0px 3px 0px;
+}
+
+.table-default th {
+  color: #E9967A;
+}
+
+.table-default {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-default th {
+    text-align: left;
+}
+
+.titulo {
+  font-weight: bold;
+}
+
+.separador {
+  margin: 3px 0px 3px 0px;
+  display: block;
+  border-bottom: 3px solid grey;
+}
+
+#bloco {
+  width: 37%;
+  float: left;
+  margin-right: 2%;
+  height: 200px;
+}
+
+#grafico {
+  width: 31%;
+  float: left;
+  margin-right: 2%;
+  height: 200px;
+}
+
+#empresa {
+  width: 25%;
+  float: left;
+  height: 200px;
+}
